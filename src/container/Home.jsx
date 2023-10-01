@@ -8,6 +8,7 @@ const Home = () => {
       <div>
         {projects.map((p) => (
           <ProjectItem
+            key={p.id}
             title={p.title}
             description={p.description}
             image={p.image}
