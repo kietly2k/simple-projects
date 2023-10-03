@@ -1,14 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const ProjectItem = (props) => {
+  const navigate = useNavigate();
+
+  const redirectToProject = () => {
+    navigate(props.url);
+  };
+
   return (
     <div className="w-56 flex flex-col text-center bg-[#9187d9]">
-      <img src={props.image} className="w-full"/>
+      <img src={props.image} className="w-full" />
       <h3 className="text-2xl">{props.title}</h3>
-      <Link to={props.url}>
-        <button className="cursor-pointer">View challenge</button>
-      </Link>
+      <button className="cursor-pointer" onClick={redirectToProject}>
+        View challenge
+      </button>
     </div>
   );
 };
