@@ -41,7 +41,7 @@ const InputList = (props) => {
       (date.months == 4 && isLeapYear(date.years) == false && date.days > 28)
     ) {
       setErrorMessage(
-        `month ${date.months} does not contains day ${date.days}`
+        `month ${date.months} does not contains day ${date.days}`,
       );
       return;
     }

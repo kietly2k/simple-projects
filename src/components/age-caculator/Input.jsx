@@ -2,11 +2,15 @@ import { useState } from "react";
 import React from "react";
 
 const Input = (props) => {
-  const [data, setData] = useState('');
+  const [data, setData] = useState("");
 
   return (
     <div className="max-w-[6rem] md:max-w-[8.2rem]">
-      <label className={`text-xs font-bold text-age-calc-smokey-grey uppercase p-2 ${props.errorMessage !== '' && 'text-age-calc-clr-light-red' }`}>
+      <label
+        className={`text-xs font-bold text-age-calc-smokey-grey uppercase p-2 ${
+          props.errorMessage !== "" && "text-age-calc-clr-light-red"
+        }`}
+      >
         {props.title}
       </label>
       <input
@@ -21,9 +25,11 @@ const Input = (props) => {
         hover:border-age-calc-clr-primary 
         target:border-age-calc-clr-primary
           hover:cursor-pointer
-         ${data !== '' ? "text-age-calc-off-black" : "text-age-calc-smokey-grey"}  ${props.errorMessage !== '' ? 'border-age-calc-clr-light-red' : ''}`}
-
-        
+         ${
+           data !== "" ? "text-age-calc-off-black" : "text-age-calc-smokey-grey"
+         }  ${
+           props.errorMessage !== "" ? "border-age-calc-clr-light-red" : ""
+         }`}
         onChange={(e) => {
           const value = e.target.value;
           setData(value);
@@ -33,7 +39,9 @@ const Input = (props) => {
         value={data}
       />
       <span
-        className={`font-normal italic text-xs text-age-calc-clr-light-red ${ props.errorMessage !== '' ? "block" : "hidden" }`}
+        className={`font-normal italic text-xs text-age-calc-clr-light-red ${
+          props.errorMessage !== "" ? "block" : "hidden"
+        }`}
       >
         {props.errorMessage}
       </span>

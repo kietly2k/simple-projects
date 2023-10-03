@@ -30,7 +30,11 @@ const AgeCaculator = () => {
 
     if (days < 0) {
       months--;
-      let previousMonth = new Date(currentDate.getFullYear(),currentDate.getMonth(),0);
+      let previousMonth = new Date(
+        currentDate.getFullYear(),
+        currentDate.getMonth(),
+        0,
+      );
       days += previousMonth.getDate();
     }
 
