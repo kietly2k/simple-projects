@@ -40,8 +40,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Base Apparel coming soon page Solution](https://github.com/kietly2k/practiceprojects/tree/production/coming-soon-page)
-- Live Site URL: [Base Apparel coming soon page Live Site](https://kietly2k.github.io/practiceprojects/coming-soon-page/index.html)
+- Solution URL: [Age calculator app Solution](https://github.com/kietly2k/simple-projects/tree/age-caculator/src/components/age-caculator)
+- Live Site URL: [Age calculator app Live Site](https://kietly2k.github.io/practiceprojects/simple-projects/age-calculator)
 
 ## My process
 
