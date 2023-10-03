@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./container/home";
 import AgeCaculator from "./components/age-caculator/AgeCaculator";
+import Home from "./container/Home";
 
 const App = () => {
   return (
